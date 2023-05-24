@@ -1,5 +1,7 @@
-import ctypes
+import time
 
-def start_focus_mode():
-    user32 = ctypes.windll.user32
-    user32.LockWorkStation()
+while True:
+    current_time = time.strftime("%H:%M:%S")
+    print("Current time is:", current_time)
+    time.sleep(1)
+    break
